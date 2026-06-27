@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:task_manager/common/widgets/auth_scaffold.dart';
 import 'package:task_manager/presentation/auth/view/forgot_password_view.dart';
 import 'package:task_manager/presentation/auth/view/sign_up_view.dart';
+import 'package:task_manager/presentation/dashboard/view/dashboard_view.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({super.key});
@@ -26,7 +27,12 @@ class SignInView extends StatelessWidget {
             TextFormField(decoration: InputDecoration(hintText: 'Password')),
             SizedBox(height: 10),
             FilledButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DashboardView()),
+                );
+              },
               child: Icon(Icons.arrow_circle_right_outlined),
             ),
             SizedBox(height: 35),

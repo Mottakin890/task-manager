@@ -1,7 +1,17 @@
 class TaskModel {
-  final int? id;
-  final String title;
-  final bool isDone;
+  String? sId;
+  String? title;
+  String? description;
+  String? status;
+  String? email;
+  String? createdDate;
 
-  TaskModel({this.id, required this.title, required this.isDone});
+  TaskModel({
+    this.sId,
+    this.title,
+    this.description,
+    this.status,
+    this.email,
+    this.createdDate,
+  });
 }

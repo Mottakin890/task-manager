@@ -40,6 +40,9 @@ dependencies:
   flutter_bloc: ^9.1.1
   equatable: ^2.0.8
   pin_code_fields: ^9.4.0
+  shared_preferences: ^2.5.5
+  http: ^1.6.0
+  logger: ^2.7.0
 
 dev_dependencies:
   flutter_test:
